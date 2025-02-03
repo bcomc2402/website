@@ -1,5 +1,5 @@
 <html>
-<link rel="stylesheet" href="login2.css">
+<link rel="stylesheet" href="login.css">
 <head>
 <center><img src="logo.jpg"width=130 height=100></center>
 </head>
@@ -15,7 +15,7 @@
     <form class="login-form">
       <input type="email" placeholder="username" id="u"/>
       <input type="password" placeholder="password" id="p"/>
-      <p class="message">Not registered? <a href="file:///C:/Users/addon/Downloads/R2/regist">Create an account</a></p>
+      <p class="message">Not registered? <a href="register.html">Create an account</a></p>
     </form>
  <center><button onclick="check()">LOG IN</button></center>
   </div>
@@ -29,7 +29,7 @@ let uname = localStorage.getItem("username");
 let pass = localStorage.getItem("password");
 if(username == uname && password == pass)
 { alert("you are valid");
-window.location.href="file:///C:/Users/addon/Downloads/H2/homepage.html";}
+window.location.href="homepage.html";}
 else{ alert("intruder");}
 }
 </script>
