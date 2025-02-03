@@ -1,0 +1,30 @@
+<html>
+<head>
+<center><img src="logo.jpg"width=150 height=100></center>
+<h1> <center> <i> Create an account  </h1> </center> </i>
+<head>
+<body style="background-color:#99ccff;">
+<body>
+<br>Name : <input type="text"><br><hr>
+Date of Birth : <input type="date"><br><hr>
+Gender :<br><input type="radio" name="gender"
+value="male">Male
+<input type="radio" name="gender"
+value="female"> Female<br><hr>
+Phone number : <input type="number"><br><hr>
+Email : <input type="email" id="username"><br><hr>
+Password : <input type="password" id="password"><br><hr>
+</head>
+
+
+<button onclick="savedata()"><a href="file:///C:/Users/addon/Downloads/L2/login2.html">REGISTER</a></button>
+<script>
+function savedata(){
+let username=document.getElementById("username").value;
+let password=document.getElementById("password").value;
+localStorage.setItem("username", username);
+localStorage.setItem("password", password);
+alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password"));
+}
+</script>
